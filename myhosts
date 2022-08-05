@@ -1,14 +1,10 @@
 [mywebserver]
 172.31.28.119
 172.31.25.4
+172.31.93.80
 
 
 
-[mywebserver:vars]
-mywebpackageforubuntu= apache2
-mywebpackageforredhat= httpd
 
-myjavapackonubuntu= openjdk-8-jre
-myjavapackonRedhat= java-1.8.0-openjdk
 
 
