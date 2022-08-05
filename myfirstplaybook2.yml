@@ -9,7 +9,7 @@
       when: ansible_os_family =="Debian"
 
     - name: i want to install the webserver on ubuntu
-      apt:
+      service:
        name: apache2
        state: started
       when: ansible_os_family =="Debian"
@@ -21,7 +21,7 @@
       when: ansible_os_family =="RedHat"
 
     - name: i want to start the webserver on Redhat
-      yum:
+      service:
         name: httpd
         state: started
       when: ansible_os_family =="RedHat"
