@@ -17,4 +17,4 @@
     loop: 
       - "{{myvar1}}"
       - "{{myvar2}}"
-      - "{{myvar2}}"
+      - "{{myvar3}}"
