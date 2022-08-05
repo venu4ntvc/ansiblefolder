@@ -2,8 +2,15 @@
 - hosts: all
   become: yes
   tasks:
-   - name: i want to install the webserver on ubuntu
-     apt:
+    - name: i want to install the webserver on ubuntu
+      apt:
        name: apache2
        state: present
-     when: ansible_os_family =="Debian"
+      when: ansible_os_family =="Debian"
+
+    - name: i want to install the webserver on ubuntu
+      apt:
+        name: apache2
+        state: present
+      when: ansible_os_family =="RedHat"
+    
