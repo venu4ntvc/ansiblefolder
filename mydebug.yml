@@ -16,7 +16,7 @@
      apt: 
       name: git
       state: present
-     when: myresult.stderr ==""
+     when: myresultstderr ==""
 
    - name: install tree
      apt:
