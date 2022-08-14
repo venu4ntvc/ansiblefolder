@@ -22,7 +22,7 @@
      apt:
       name: tree
       state: present
-     when: myresult stdout!=""
+     when: myresult stdout !=""
 
 
 
