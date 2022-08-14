@@ -1,2 +1,6 @@
 ---
 # handlers file for mywebrole
+- name: restart webserver
+  apt:
+   name: apache2
+   state: restart
