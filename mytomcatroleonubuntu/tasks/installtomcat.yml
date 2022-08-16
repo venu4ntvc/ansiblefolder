@@ -1,16 +1,16 @@
 ---
-- name: install tomcat
+- name: download tomcat tar file
   get_url:
-    url: https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.65/bin/apache-tomcat-9.0.65.tar.gz
-    dest: /home/ubuntu/apache-tomcat-9.0.65.tar.gz
+    url: https://downloads.apache.org/tomcat/tomcat-10/v10.0.22/bin/apache-tomcat-10.0.22.tar.gz
+    dest: /home/ubuntu/apache-tomcat-10.0.22.tar.gz
     force_basic_auth: yes
 
-- name: create a tomcat directory
+- name: create directory
   file:
-   path: /opt/tomcat
-   state: directory
+     path: /opt/tomcat
+     state: directory
 
-- name:  i want extract tar file
-  command: 
-       cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-9.0.65.tar.gz -C /opt/tomcat --strip-components=1
-       creates: /opt/tomcat
+- name: extract tar file
+  command:
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-10.0.22.tar.gz -C /opt/tomcat --strip-components=1
+    creates: /opt/tomcat/LICENSE
