@@ -7,6 +7,9 @@
 - include_tasks: tomcatservice.yml
 - include_tasks: starttomcat.yml
 - include_tasks: restart.yml
+- include_tasks: tomcatmanage.yml
+
+
 
 
 
