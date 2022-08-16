@@ -5,3 +5,4 @@
     url: https://maha14july22.s3.us-east-2.amazonaws.com/gameoflife.war
     dest: /opt/tomcat/webapps/gameoflife.war
     force_basic_auth: yes
+    ignore_errors: yes
